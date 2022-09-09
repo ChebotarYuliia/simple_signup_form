@@ -30,6 +30,12 @@ html {
     padding: 20px 0;
 }
 
+@media screen and (max-width: 375px) {
+    .signup-section {
+        background-image: url('../images/bg-intro-mobile.png');
+    }
+}
+
 @media screen and (max-width: 991px) {
     .signup-section {
         height: auto;
@@ -174,6 +180,31 @@ html {
     }
 }
 
+.signup-input-wrapper {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.signup-input-wrapper.error input {
+    color: var(--primary-red);
+    border-color: var(--primary-red);
+    padding-right: 50px;
+}
+
+.signup-input-wrapper.error input:focus {
+    border-color: var(--primary-red);
+}
+
+.signup-input-wrapper.error:after {
+    content: url('../images/icon-error.svg');
+    color: var(--primary-red);
+    right: 15px;
+    top: 13px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
 .signup-input-wrapper input {
     background: transparent;
     width: 100%;
@@ -182,7 +213,6 @@ html {
     color: var(--neutral-dark-blue);
     border: 1px solid var(--neutral-grayish-blue);
     border-radius: 8px;
-    margin-bottom: 20px;
 }
 
 .signup-input-wrapper input::placeholder {
@@ -193,6 +223,15 @@ html {
 .signup-input-wrapper input:focus {
     border-color: var(--neutral-dark-blue);
     outline: none;
+}
+
+
+.text-error {
+    text-align: right;
+    font-size: .8rem;
+    color: var(--primary-red);
+    font-style: italic;
+    margin-top: 5px;
 }
 
 .signup-btn-wrapper {
