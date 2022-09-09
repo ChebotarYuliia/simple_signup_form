@@ -286,3 +286,17 @@ html {
     color: var(--primary-red);
     text-decoration: none;
 }
+
+.thankyou {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../images/bg-intro-desktop.png');
+}
+
+.thankyou h2 {
+    text-transform: uppercase;
+    font-size: 4rem;
+}
