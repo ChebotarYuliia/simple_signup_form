@@ -53,7 +53,7 @@ function handleValidation() {
         showError('name', 'First name cannot be empty');
         res = false;
     };
-    if (lastName.length < 2) {
+    if (lastName.length === 0) {
         showError('lastName', 'Last name cannot be empty');
         res = false;
     };
